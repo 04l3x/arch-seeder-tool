@@ -1,0 +1,21 @@
+[package]
+name = "arch-seeder-tool"
+version = "0.1.0"
+authors = ["al3x al3x@al3x.io"]
+edition = "2021"
+description = "arch seeder tool binary"
+repository = "https://gitlab.com/al3x0s/arch-seeder-tool"
+license = "MIT OR GNU-GPL v3"
+
+[dependencies]
+toml = "0.5"
+structopt = "0.3"
+
+[dependencies.serde]
+version = "1"
+features = [ "derive" ]
+
+[dependencies.lib]
+path = "../arch-seeder-lib"
+package =  "arch-seeder-lib"
+
